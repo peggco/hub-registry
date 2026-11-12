@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "time",
+  "name": "Time",
+  "description": "Convert between timezones and answer current-time questions accurately.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2025.1.0",
+  "tags": ["time", "timezone", "utilities"],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": ["mcp-server-time"]
+  },
+  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+}

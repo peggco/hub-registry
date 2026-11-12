@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "filesystem",
+  "name": "Filesystem",
+  "description": "Read, write and search files inside a directory you explicitly allow.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2025.1.0",
+  "tags": ["files", "local", "search"],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "${WORKSPACE}"
+    ]
+  },
+  "requiredEnv": ["WORKSPACE"],
+  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+}

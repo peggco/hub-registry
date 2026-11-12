@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hub.pegg.dev/schema/skill.schema.json",
+  "title": "Pegg skill overlay entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "kind", "name", "skillId", "source"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "skill" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "skillId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[^/\\\\\\s]+$"
+    },
+    "source": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)?$"
+    },
+    "isOfficial": { "type": "boolean" },
+    "url": { "type": "string", "maxLength": 500 },
+    "license": { "type": "string", "maxLength": 40 },
+    "description": { "type": "string", "maxLength": 500 },
+    "tags": {
+      "type": "array",
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 32
+      }
+    },
+    "path": { "type": "string", "maxLength": 500 },
+    "install": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "source"],
+      "properties": {
+        "type": { "const": "github" },
+        "source": { "$ref": "#/$defs/repository" },
+        "path": { "type": "string", "maxLength": 500 },
+        "ref": { "type": "string", "maxLength": 100 }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "number", "boolean", "array", "object", "null"]
+      }
+    }
+  },
+  "$defs": {
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*/[A-Za-z0-9][A-Za-z0-9._-]*$"
+    }
+  }
+}

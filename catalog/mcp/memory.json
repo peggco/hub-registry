@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "memory",
+  "name": "Memory",
+  "description": "Persist entities, relations and observations in a local knowledge graph.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2025.1.0",
+  "tags": ["memory", "knowledge-graph", "local"],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-memory"]
+  },
+  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+}

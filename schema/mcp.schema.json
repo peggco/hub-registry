@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hub.pegg.dev/schema/mcp.schema.json",
+  "title": "Pegg MCP catalog entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "kind", "id", "name", "description", "transport"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "mcp" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "description": { "type": "string", "minLength": 20, "maxLength": 280 },
+    "vendor": { "type": "string", "maxLength": 80 },
+    "homepage": { "type": "string", "format": "uri" },
+    "repository": { "$ref": "#/$defs/repository" },
+    "license": { "type": "string", "maxLength": 40 },
+    "isOfficial": { "type": "boolean" },
+    "version": { "type": "string", "maxLength": 40 },
+    "tags": { "$ref": "#/$defs/tags" },
+    "transport": { "$ref": "#/$defs/transport" },
+    "requiredEnv": { "$ref": "#/$defs/requiredEnv" },
+    "readme": { "$ref": "#/$defs/readme" }
+  },
+  "$defs": {
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*/[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 32
+      }
+    },
+    "requiredEnv": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" }
+    },
+    "readme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["github", "none"] },
+        "source": { "$ref": "#/$defs/repository" }
+      },
+      "if": { "properties": { "type": { "const": "github" } } },
+      "then": { "required": ["source"] }
+    },
+    "transport": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "command"],
+          "properties": {
+            "type": { "const": "stdio" },
+            "command": { "type": "string", "minLength": 1 },
+            "args": { "type": "array", "items": { "type": "string" } },
+            "env": {
+              "type": "object",
+              "additionalProperties": { "type": "string" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "url"],
+          "properties": {
+            "type": { "enum": ["sse", "http"] },
+            "url": { "type": "string", "format": "uri" },
+            "headers": {
+              "type": "object",
+              "additionalProperties": { "type": "string" }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

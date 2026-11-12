@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "playwright",
+  "name": "Playwright",
+  "description": "Drive a real browser for navigation, accessibility snapshots and screenshots.",
+  "vendor": "Microsoft",
+  "homepage": "https://github.com/microsoft/playwright-mcp",
+  "repository": "microsoft/playwright-mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.0.40",
+  "tags": ["browser", "playwright", "automation"],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@playwright/mcp@latest"]
+  },
+  "readme": { "type": "github", "source": "microsoft/playwright-mcp" }
+}

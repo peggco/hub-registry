@@ -1,0 +1,42 @@
+name: refresh skills base
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SKILLS_SOURCE_URL: ${{ vars.SKILLS_SOURCE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch legacy dataset
+        run: |
+          src="${SKILLS_SOURCE_URL:-https://cdn.pegg.dev/skills.json}"
+          curl -sS --max-time 120 "$src" -o /tmp/skills.json
+          node -e "const d=require('/tmp/skills.json'); if(!Array.isArray(d)||d.length<100) throw new Error('unexpected dataset')"
+          cp /tmp/skills.json base/skills.json
+      - name: Open PR when changed
+        run: |
+          if git diff --quiet -- base/skills.json; then
+            echo "no changes"
+            exit 0
+          fi
+          branch="chore/refresh-base-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add base/skills.json
+          git commit -m "chore: refresh skills base snapshot"
+          git push -u origin "$branch"
+          gh pr create \
+            --title "chore: refresh skills base snapshot" \
+            --body "Automated refresh of base/skills.json from the legacy producer." \
+            --base main

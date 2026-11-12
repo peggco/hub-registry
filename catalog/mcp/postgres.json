@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "postgres",
+  "name": "PostgreSQL",
+  "description": "Query a PostgreSQL database with read-only tools for schema and data inspection.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2025.1.0",
+  "tags": ["database", "postgres", "sql"],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-postgres", "${DATABASE_URL}"]
+  },
+  "requiredEnv": ["DATABASE_URL"],
+  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+}

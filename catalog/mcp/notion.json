@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "notion",
+  "name": "Notion",
+  "description": "Search pages and databases, then read or update Notion content through the API.",
+  "vendor": "Notion",
+  "homepage": "https://github.com/makenotion/notion-mcp-server",
+  "repository": "makenotion/notion-mcp-server",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "1.8.0",
+  "tags": ["notion", "docs", "database"],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@notionhq/notion-mcp-server"],
+    "env": { "NOTION_TOKEN": "${NOTION_TOKEN}" }
+  },
+  "requiredEnv": ["NOTION_TOKEN"],
+  "readme": { "type": "github", "source": "makenotion/notion-mcp-server" }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "linear",
+  "name": "Linear",
+  "description": "Find and update Linear issues, projects and cycles from the agent.",
+  "vendor": "Linear",
+  "homepage": "https://linear.app/docs/mcp",
+  "license": "Proprietary",
+  "isOfficial": true,
+  "tags": ["linear", "issues", "project-management"],
+  "transport": {
+    "type": "sse",
+    "url": "https://mcp.linear.app/sse",
+    "headers": { "Authorization": "Bearer ${LINEAR_API_KEY}" }
+  },
+  "requiredEnv": ["LINEAR_API_KEY"],
+  "readme": { "type": "none" }
+}

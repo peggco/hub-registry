@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hub.pegg.dev/schema/plugin.schema.json",
+  "title": "Pegg plugin catalog entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "id",
+    "name",
+    "description",
+    "repository",
+    "version",
+    "install"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "plugin" },
+    "id": { "$ref": "#/$defs/repository" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "description": { "type": "string", "minLength": 20, "maxLength": 280 },
+    "repository": { "$ref": "#/$defs/repository" },
+    "homepage": { "type": "string", "format": "uri" },
+    "license": { "type": "string", "maxLength": 40 },
+    "isOfficial": { "type": "boolean" },
+    "version": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "requires": { "$ref": "#/$defs/requires" },
+    "tags": { "$ref": "#/$defs/tags" },
+    "capabilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["tools", "skills", "permissions", "commands", "events"] }
+    },
+    "platforms": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["linux", "darwin"] }
+    },
+    "arch": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["amd64", "arm64"] }
+    },
+    "install": { "$ref": "#/$defs/install" },
+    "readme": { "$ref": "#/$defs/readme" }
+  },
+  "$defs": {
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*/[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 32
+      }
+    },
+    "install": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "source"],
+      "properties": {
+        "type": { "const": "github-release" },
+        "source": { "$ref": "#/$defs/repository" },
+        "assetPattern": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pegg": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "protocol": { "type": "integer", "minimum": 1, "maximum": 99 }
+      }
+    },
+    "readme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["github", "none"] },
+        "source": { "$ref": "#/$defs/repository" }
+      },
+      "if": { "properties": { "type": { "const": "github" } } },
+      "then": { "required": ["source"] }
+    }
+  }
+}

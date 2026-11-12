@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "fetch",
+  "name": "Fetch",
+  "description": "Fetch a URL and convert the response to clean markdown for the agent.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2025.1.0",
+  "tags": ["web", "http", "markdown"],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": ["mcp-server-fetch"]
+  },
+  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+}
