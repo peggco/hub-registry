@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "firecrawl",
+  "name": "Firecrawl",
+  "description": "Search, scrape, crawl and extract structured data from websites.",
+  "vendor": "Firecrawl",
+  "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repository": "firecrawl/firecrawl-mcp-server",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "3.40.0",
+  "tags": [
+    "search",
+    "scrape",
+    "crawler"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "firecrawl-mcp"
+    ],
+    "env": {
+      "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "FIRECRAWL_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "firecrawl/firecrawl-mcp-server"
+  }
+}

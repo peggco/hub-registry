@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "exa",
+  "name": "Exa",
+  "description": "Search the web and crawl pages with the Exa neural search API.",
+  "vendor": "Exa",
+  "homepage": "https://github.com/exa-labs/exa-mcp-server",
+  "repository": "exa-labs/exa-mcp-server",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "3.4.3",
+  "tags": [
+    "search",
+    "web",
+    "research"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "exa-mcp-server"
+    ],
+    "env": {
+      "EXA_API_KEY": "${EXA_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "EXA_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "exa-labs/exa-mcp-server"
+  }
+}

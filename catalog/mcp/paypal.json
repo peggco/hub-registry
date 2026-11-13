@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "paypal",
+  "name": "PayPal",
+  "description": "Access PayPal orders, payments, subscriptions and disputes for commerce workflows.",
+  "vendor": "PayPal",
+  "homepage": "https://developer.paypal.com/community/blog/paypal-mcp-server/",
+  "isOfficial": true,
+  "tags": [
+    "paypal",
+    "payments",
+    "commerce"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.paypal.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

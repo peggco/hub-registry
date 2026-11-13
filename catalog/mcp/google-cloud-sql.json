@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "google-cloud-sql",
+  "name": "Google Cloud SQL",
+  "description": "Create, manage and query Google Cloud SQL databases.",
+  "vendor": "Google Cloud",
+  "homepage": "https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp",
+  "isOfficial": true,
+  "tags": [
+    "google-cloud",
+    "database",
+    "sql"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://sqladmin.googleapis.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

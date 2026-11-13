@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "obsidian",
+  "name": "Obsidian",
+  "description": "Read, write, search and edit notes in an Obsidian vault.",
+  "vendor": "Obsidian MCP Server",
+  "homepage": "https://github.com/cyanheads/obsidian-mcp-server",
+  "repository": "cyanheads/obsidian-mcp-server",
+  "isOfficial": false,
+  "version": "3.9.0",
+  "tags": [
+    "obsidian",
+    "notes",
+    "markdown"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "obsidian-mcp-server"
+    ],
+    "env": {
+      "OBSIDIAN_API_KEY": "${OBSIDIAN_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "OBSIDIAN_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "cyanheads/obsidian-mcp-server"
+  }
+}

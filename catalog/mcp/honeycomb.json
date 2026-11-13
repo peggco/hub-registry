@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "honeycomb",
+  "name": "Honeycomb",
+  "description": "Query Honeycomb traces, metrics, SLOs and triggers for observability work.",
+  "vendor": "Honeycomb",
+  "homepage": "https://docs.honeycomb.io/",
+  "isOfficial": true,
+  "tags": [
+    "honeycomb",
+    "observability",
+    "traces"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.honeycomb.io/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

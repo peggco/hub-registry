@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "blender",
+  "name": "Blender",
+  "description": "Control Blender to model, animate, render and import 3D assets.",
+  "vendor": "Blender MCP",
+  "homepage": "https://github.com/ahujasid/mcp-for-blender",
+  "repository": "ahujasid/mcp-for-blender",
+  "license": "MIT",
+  "isOfficial": false,
+  "tags": [
+    "blender",
+    "3d",
+    "design"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "mcp-for-blender"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "ahujasid/mcp-for-blender"
+  }
+}

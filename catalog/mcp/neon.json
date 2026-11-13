@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "neon",
+  "name": "Neon",
+  "description": "Create and manage Neon Postgres projects, branches, databases and queries.",
+  "vendor": "Neon",
+  "homepage": "https://neon.com/docs/ai/neon-mcp-server",
+  "repository": "neondatabase/mcp-server-neon",
+  "license": "MIT",
+  "isOfficial": true,
+  "tags": [
+    "neon",
+    "postgres",
+    "database"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.neon.tech/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "neondatabase/mcp-server-neon"
+  }
+}

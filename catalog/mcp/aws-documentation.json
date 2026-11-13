@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "aws-documentation",
+  "name": "AWS Documentation",
+  "description": "Search AWS documentation, API references and best-practice guides.",
+  "vendor": "Amazon Web Services",
+  "homepage": "https://github.com/awslabs/mcp",
+  "repository": "awslabs/mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "1.2.5",
+  "tags": [
+    "aws",
+    "docs",
+    "cloud"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "awslabs.aws-documentation-mcp-server@latest"
+    ],
+    "env": {
+      "AWS_REGION": "${AWS_REGION}"
+    }
+  },
+  "requiredEnv": [
+    "AWS_REGION"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "awslabs/mcp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "prisma",
+  "name": "Prisma",
+  "description": "Manage Prisma Postgres databases and Prisma Compute apps from the agent.",
+  "vendor": "Prisma",
+  "homepage": "https://www.prisma.io/docs/ai/tools/mcp-server",
+  "isOfficial": true,
+  "tags": [
+    "prisma",
+    "postgres",
+    "database"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.prisma.io/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

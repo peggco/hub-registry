@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "home-assistant",
+  "name": "Home Assistant",
+  "description": "Read states and control devices, scenes and automations in Home Assistant.",
+  "vendor": "Home Assistant MCP",
+  "homepage": "https://github.com/homeassistant-ai/ha-mcp",
+  "repository": "homeassistant-ai/ha-mcp",
+  "isOfficial": false,
+  "version": "9.2.0",
+  "tags": [
+    "home-assistant",
+    "smart-home",
+    "automation"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "ha-mcp@latest"
+    ],
+    "env": {
+      "HOMEASSISTANT_URL": "${HOMEASSISTANT_URL}",
+      "HOMEASSISTANT_TOKEN": "${HOMEASSISTANT_TOKEN}"
+    }
+  },
+  "requiredEnv": [
+    "HOMEASSISTANT_URL",
+    "HOMEASSISTANT_TOKEN"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "homeassistant-ai/ha-mcp"
+  }
+}

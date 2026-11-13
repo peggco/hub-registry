@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "redis",
+  "name": "Redis",
+  "description": "Inspect and manage Redis data structures, caches and streams.",
+  "vendor": "Redis",
+  "homepage": "https://github.com/redis/mcp-redis",
+  "repository": "redis/mcp-redis",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "0.5.1",
+  "tags": [
+    "redis",
+    "database",
+    "cache"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "redis-mcp-server",
+      "--url",
+      "${REDIS_URL}"
+    ]
+  },
+  "requiredEnv": [
+    "REDIS_URL"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "redis/mcp-redis"
+  }
+}

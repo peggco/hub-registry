@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "neo4j",
+  "name": "Neo4j Cypher",
+  "description": "Run Cypher queries and inspect schemas on Neo4j graph databases.",
+  "vendor": "Neo4j Labs",
+  "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "repository": "neo4j-contrib/mcp-neo4j",
+  "license": "MIT",
+  "isOfficial": false,
+  "version": "0.6.0",
+  "tags": [
+    "neo4j",
+    "graph-database",
+    "cypher"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "mcp-neo4j-cypher"
+    ],
+    "env": {
+      "NEO4J_URI": "${NEO4J_URI}",
+      "NEO4J_USERNAME": "${NEO4J_USERNAME}",
+      "NEO4J_PASSWORD": "${NEO4J_PASSWORD}",
+      "NEO4J_DATABASE": "${NEO4J_DATABASE}"
+    }
+  },
+  "requiredEnv": [
+    "NEO4J_URI",
+    "NEO4J_USERNAME",
+    "NEO4J_PASSWORD",
+    "NEO4J_DATABASE"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "neo4j-contrib/mcp-neo4j"
+  }
+}

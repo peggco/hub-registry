@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "miro",
+  "name": "Miro",
+  "description": "Create and edit Miro boards, frames, sticky notes and diagrams.",
+  "vendor": "Miro",
+  "homepage": "https://developers.miro.com/docs/miro-mcp",
+  "isOfficial": true,
+  "tags": [
+    "miro",
+    "whiteboard",
+    "collaboration"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.miro.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

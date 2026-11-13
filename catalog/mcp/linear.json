@@ -8,12 +8,16 @@
   "homepage": "https://linear.app/docs/mcp",
   "license": "Proprietary",
   "isOfficial": true,
-  "tags": ["linear", "issues", "project-management"],
+  "tags": [
+    "linear",
+    "issues",
+    "project-management"
+  ],
   "transport": {
-    "type": "sse",
-    "url": "https://mcp.linear.app/sse",
-    "headers": { "Authorization": "Bearer ${LINEAR_API_KEY}" }
+    "type": "http",
+    "url": "https://mcp.linear.app/mcp"
   },
-  "requiredEnv": ["LINEAR_API_KEY"],
-  "readme": { "type": "none" }
+  "readme": {
+    "type": "none"
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "vercel",
+  "name": "Vercel",
+  "description": "Manage Vercel projects, deployments, domains and environment variables.",
+  "vendor": "Vercel",
+  "homepage": "https://vercel.com/docs/mcp",
+  "repository": "vercel/vercel-mcp-overview",
+  "isOfficial": true,
+  "tags": [
+    "vercel",
+    "deployments",
+    "hosting"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.vercel.com"
+  },
+  "readme": {
+    "type": "github",
+    "source": "vercel/vercel-mcp-overview"
+  }
+}

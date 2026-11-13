@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "everything",
+  "name": "Everything",
+  "description": "Reference MCP server with sample prompts, resources and tools for testing clients.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2.3.0",
+  "tags": [
+    "testing",
+    "reference",
+    "development"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-everything"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "modelcontextprotocol/servers"
+  }
+}

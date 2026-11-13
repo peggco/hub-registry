@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "planetscale",
+  "name": "PlanetScale",
+  "description": "Explore PlanetScale databases, branches and schemas, and run SQL queries.",
+  "vendor": "PlanetScale",
+  "homepage": "https://planetscale.com/docs/mcp",
+  "repository": "planetscale/mcp-server",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "tags": [
+    "planetscale",
+    "mysql",
+    "database"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.pscale.dev/mcp/planetscale"
+  },
+  "readme": {
+    "type": "github",
+    "source": "planetscale/mcp-server"
+  }
+}

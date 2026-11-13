@@ -10,12 +10,23 @@
   "license": "Apache-2.0",
   "isOfficial": true,
   "version": "0.1.0",
-  "tags": ["sentry", "errors", "observability"],
+  "tags": [
+    "sentry",
+    "errors",
+    "observability"
+  ],
   "transport": {
     "type": "http",
     "url": "https://mcp.sentry.dev/mcp",
-    "headers": { "Authorization": "Bearer ${SENTRY_AUTH_TOKEN}" }
+    "headers": {
+      "Authorization": "Bearer ${SENTRY_AUTH_TOKEN}"
+    }
   },
-  "requiredEnv": ["SENTRY_AUTH_TOKEN"],
-  "readme": { "type": "github", "source": "getsentry/sentry-mcp" }
+  "requiredEnv": [
+    "SENTRY_AUTH_TOKEN"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "getsentry/sentry-mcp"
+  }
 }

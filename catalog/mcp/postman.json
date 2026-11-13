@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "postman",
+  "name": "Postman",
+  "description": "Search Postman collections, send requests and manage API workspaces.",
+  "vendor": "Postman",
+  "homepage": "https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/postman-mcp-remote-server",
+  "repository": "postmanlabs/postman-mcp-server",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "tags": [
+    "postman",
+    "api",
+    "http"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.postman.com/mcp",
+    "headers": {
+      "Authorization": "Bearer ${POSTMAN_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "POSTMAN_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "postmanlabs/postman-mcp-server"
+  }
+}

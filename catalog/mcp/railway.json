@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "railway",
+  "name": "Railway",
+  "description": "Create and manage Railway projects, services, variables and deployments.",
+  "vendor": "Railway",
+  "homepage": "https://railway.com/guides/mcp-server",
+  "isOfficial": true,
+  "tags": [
+    "railway",
+    "deployments",
+    "hosting"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.railway.com/"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

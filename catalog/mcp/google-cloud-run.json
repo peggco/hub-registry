@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "google-cloud-run",
+  "name": "Google Cloud Run",
+  "description": "Deploy and manage Google Cloud Run services and revisions.",
+  "vendor": "Google Cloud",
+  "homepage": "https://cloud.google.com/run/docs/reference/mcp",
+  "isOfficial": true,
+  "tags": [
+    "google-cloud",
+    "cloud-run",
+    "deployments"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://run.googleapis.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

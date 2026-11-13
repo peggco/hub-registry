@@ -5,17 +5,30 @@
   "name": "SQLite",
   "description": "Explore and query a local SQLite database file with safe, read-oriented tools.",
   "vendor": "Model Context Protocol",
-  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+  "homepage": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite",
   "repository": "modelcontextprotocol/servers",
   "license": "MIT",
   "isOfficial": true,
-  "version": "2025.1.0",
-  "tags": ["database", "sqlite", "sql"],
+  "version": "2025.4.25",
+  "tags": [
+    "database",
+    "sqlite",
+    "sql"
+  ],
   "transport": {
     "type": "stdio",
     "command": "uvx",
-    "args": ["mcp-server-sqlite", "--db-path", "${SQLITE_PATH}"]
+    "args": [
+      "mcp-server-sqlite",
+      "--db-path",
+      "${SQLITE_PATH}"
+    ]
   },
-  "requiredEnv": ["SQLITE_PATH"],
-  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+  "requiredEnv": [
+    "SQLITE_PATH"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "modelcontextprotocol/servers"
+  }
 }

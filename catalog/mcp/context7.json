@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "context7",
+  "name": "Context7",
+  "description": "Pull up-to-date, version-specific documentation and code examples for libraries.",
+  "vendor": "Upstash",
+  "homepage": "https://github.com/upstash/context7",
+  "repository": "upstash/context7",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "4.7.0",
+  "tags": [
+    "docs",
+    "search",
+    "code"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@upstash/context7-mcp"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "upstash/context7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "gitlab",
+  "name": "GitLab",
+  "description": "Search GitLab projects, merge requests, issues and pipelines through the official server.",
+  "vendor": "GitLab",
+  "homepage": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+  "repository": "gitlab-org/gitlab",
+  "isOfficial": true,
+  "tags": [
+    "gitlab",
+    "merge-requests",
+    "ci-cd"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://gitlab.com/api/v4/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

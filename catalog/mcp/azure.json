@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "azure",
+  "name": "Azure",
+  "description": "Manage Azure resources and query Azure services through the Azure CLI.",
+  "vendor": "Microsoft",
+  "homepage": "https://github.com/microsoft/mcp",
+  "repository": "microsoft/mcp",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "4.0.0-beta.7",
+  "tags": [
+    "azure",
+    "cloud",
+    "infrastructure"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@azure/mcp@latest",
+      "server",
+      "start"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "microsoft/mcp"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "shopify-dev",
+  "name": "Shopify Dev",
+  "description": "Search Shopify developer docs, generate Admin API queries and validate app extensions.",
+  "vendor": "Shopify",
+  "isOfficial": true,
+  "version": "1.18.0",
+  "tags": [
+    "shopify",
+    "docs",
+    "graphql"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@shopify/dev-mcp@latest"
+    ]
+  },
+  "readme": {
+    "type": "none"
+  }
+}

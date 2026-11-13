@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "microsoft-learn",
+  "name": "Microsoft Learn",
+  "description": "Search Microsoft Learn documentation and official samples, with citations.",
+  "vendor": "Microsoft",
+  "homepage": "https://learn.microsoft.com/en-us/training/support/mcp",
+  "isOfficial": true,
+  "tags": [
+    "microsoft",
+    "docs",
+    "learning"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://learn.microsoft.com/api/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

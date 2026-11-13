@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "qdrant",
+  "name": "Qdrant",
+  "description": "Store and retrieve vector embeddings in Qdrant collections.",
+  "vendor": "Qdrant",
+  "homepage": "https://github.com/qdrant/mcp-server-qdrant",
+  "repository": "qdrant/mcp-server-qdrant",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.8.1",
+  "tags": [
+    "qdrant",
+    "vector-search",
+    "embeddings"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "mcp-server-qdrant"
+    ],
+    "env": {
+      "QDRANT_URL": "${QDRANT_URL}",
+      "QDRANT_API_KEY": "${QDRANT_API_KEY}",
+      "COLLECTION_NAME": "${COLLECTION_NAME}"
+    }
+  },
+  "requiredEnv": [
+    "QDRANT_URL",
+    "QDRANT_API_KEY",
+    "COLLECTION_NAME"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "qdrant/mcp-server-qdrant"
+  }
+}

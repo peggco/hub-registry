@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "sanity",
+  "name": "Sanity",
+  "description": "Manage Sanity content, schemas and datasets through the hosted Sanity MCP server.",
+  "vendor": "Sanity",
+  "homepage": "https://www.sanity.io/docs/mcp",
+  "isOfficial": true,
+  "tags": [
+    "sanity",
+    "cms",
+    "content"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.sanity.io"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

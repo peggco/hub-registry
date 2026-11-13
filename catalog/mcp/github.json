@@ -3,22 +3,30 @@
   "kind": "mcp",
   "id": "github",
   "name": "GitHub",
-  "description": "Issues, pull requests, repositories and code search through the GitHub API.",
+  "description": "Issues, pull requests, repositories and code search through the official GitHub server.",
   "vendor": "GitHub",
   "homepage": "https://github.com/github/github-mcp-server",
   "repository": "github/github-mcp-server",
   "license": "MIT",
   "isOfficial": true,
-  "version": "0.4.0",
-  "tags": ["git", "issues", "pull-requests", "code-search"],
+  "tags": [
+    "git",
+    "issues",
+    "pull-requests",
+    "code-search"
+  ],
   "transport": {
-    "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-github"],
-    "env": {
-      "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+    "type": "http",
+    "url": "https://api.githubcopilot.com/mcp/",
+    "headers": {
+      "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
     }
   },
-  "requiredEnv": ["GITHUB_PERSONAL_ACCESS_TOKEN"],
-  "readme": { "type": "github", "source": "github/github-mcp-server" }
+  "requiredEnv": [
+    "GITHUB_PERSONAL_ACCESS_TOKEN"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "github/github-mcp-server"
+  }
 }

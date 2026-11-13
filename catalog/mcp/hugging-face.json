@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "hugging-face",
+  "name": "Hugging Face",
+  "description": "Search models, datasets and Spaces on the Hugging Face Hub.",
+  "vendor": "Hugging Face",
+  "homepage": "https://huggingface.co/mcp",
+  "isOfficial": true,
+  "tags": [
+    "huggingface",
+    "models",
+    "datasets"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://huggingface.co/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "box",
+  "name": "Box",
+  "description": "Search, read and manage files and folders stored in Box.",
+  "vendor": "Box",
+  "homepage": "https://developer.box.com/guides/box-mcp/",
+  "isOfficial": true,
+  "tags": [
+    "box",
+    "files",
+    "storage"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.box.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

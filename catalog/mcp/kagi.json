@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "kagi",
+  "name": "Kagi Search",
+  "description": "Search the web and extract page content with the Kagi API.",
+  "vendor": "Kagi",
+  "homepage": "https://kagi.com/api",
+  "repository": "kagisearch/kagimcp",
+  "license": "MIT",
+  "isOfficial": true,
+  "tags": [
+    "search",
+    "web",
+    "extraction"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.kagi.com/mcp",
+    "headers": {
+      "Authorization": "Bearer ${KAGI_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "KAGI_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "kagisearch/kagimcp"
+  }
+}

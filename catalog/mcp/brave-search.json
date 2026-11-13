@@ -5,18 +5,34 @@
   "name": "Brave Search",
   "description": "Search the web and news with the Brave Search API and return ranked results.",
   "vendor": "Brave",
-  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
-  "repository": "modelcontextprotocol/servers",
+  "homepage": "https://github.com/brave/brave-search-mcp-server",
+  "repository": "brave/brave-search-mcp-server",
   "license": "MIT",
   "isOfficial": true,
-  "version": "2025.1.0",
-  "tags": ["search", "web", "news"],
+  "version": "2.1.4",
+  "tags": [
+    "search",
+    "web",
+    "news"
+  ],
   "transport": {
     "type": "stdio",
     "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-brave-search"],
-    "env": { "BRAVE_API_KEY": "${BRAVE_API_KEY}" }
+    "args": [
+      "-y",
+      "@brave/brave-search-mcp-server",
+      "--transport",
+      "stdio"
+    ],
+    "env": {
+      "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+    }
   },
-  "requiredEnv": ["BRAVE_API_KEY"],
-  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+  "requiredEnv": [
+    "BRAVE_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "brave/brave-search-mcp-server"
+  }
 }

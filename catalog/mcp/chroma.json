@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "chroma",
+  "name": "Chroma",
+  "description": "Create collections and run vector and full-text search in Chroma Cloud.",
+  "vendor": "Chroma",
+  "homepage": "https://github.com/chroma-core/chroma-mcp",
+  "repository": "chroma-core/chroma-mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.2.6",
+  "tags": [
+    "chroma",
+    "vector-search",
+    "embeddings"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "chroma-mcp"
+    ],
+    "env": {
+      "CHROMA_CLIENT_TYPE": "cloud",
+      "CHROMA_TENANT": "${CHROMA_TENANT}",
+      "CHROMA_DATABASE": "${CHROMA_DATABASE}",
+      "CHROMA_API_KEY": "${CHROMA_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "CHROMA_TENANT",
+    "CHROMA_DATABASE",
+    "CHROMA_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "chroma-core/chroma-mcp"
+  }
+}

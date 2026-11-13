@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "dropbox",
+  "name": "Dropbox",
+  "description": "Search, read and organize files and folders in Dropbox.",
+  "vendor": "Dropbox",
+  "homepage": "https://help.dropbox.com/integrations/connect-dropbox-mcp-server",
+  "isOfficial": true,
+  "tags": [
+    "dropbox",
+    "files",
+    "storage"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.dropbox.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

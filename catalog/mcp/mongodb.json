@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "mongodb",
+  "name": "MongoDB",
+  "description": "Query and manage MongoDB databases and MongoDB Atlas deployments.",
+  "vendor": "MongoDB",
+  "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "repository": "mongodb-js/mongodb-mcp-server",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "3.3.0",
+  "tags": [
+    "mongodb",
+    "database",
+    "atlas"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mongodb-mcp-server",
+      "--readOnly"
+    ],
+    "env": {
+      "MDB_MCP_CONNECTION_STRING": "${MDB_MCP_CONNECTION_STRING}"
+    }
+  },
+  "requiredEnv": [
+    "MDB_MCP_CONNECTION_STRING"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "mongodb-js/mongodb-mcp-server"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "google-maps",
+  "name": "Google Maps",
+  "description": "Ground agent answers with Google Maps places, routes, geocoding and weather data.",
+  "vendor": "Google",
+  "homepage": "https://developers.google.com/maps/ai/mcp",
+  "isOfficial": true,
+  "tags": [
+    "google-maps",
+    "geo",
+    "places"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mapstools.googleapis.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

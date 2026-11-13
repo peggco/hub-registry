@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "semgrep",
+  "name": "Semgrep",
+  "description": "Scan code for security vulnerabilities and run Semgrep rules.",
+  "vendor": "Semgrep",
+  "homepage": "https://github.com/semgrep/semgrep",
+  "repository": "semgrep/semgrep",
+  "isOfficial": true,
+  "version": "0.9.0",
+  "tags": [
+    "security",
+    "static-analysis",
+    "code"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "semgrep-mcp"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "semgrep/semgrep"
+  }
+}

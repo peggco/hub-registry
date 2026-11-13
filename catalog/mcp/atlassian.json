@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "atlassian",
+  "name": "Atlassian",
+  "description": "Search Jira issues, Confluence pages and Loom videos, then create and update work items.",
+  "vendor": "Atlassian",
+  "homepage": "https://www.atlassian.com/platform/remote-mcp-server",
+  "repository": "atlassian/atlassian-mcp-server",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "tags": [
+    "jira",
+    "confluence",
+    "issues",
+    "docs"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.atlassian.com/v2/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "atlassian/atlassian-mcp-server"
+  }
+}

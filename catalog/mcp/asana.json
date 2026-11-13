@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "asana",
+  "name": "Asana",
+  "description": "Find, create and update Asana tasks, projects and goals from the agent.",
+  "vendor": "Asana",
+  "homepage": "https://developers.asana.com/docs/mcp-server",
+  "license": "Proprietary",
+  "isOfficial": true,
+  "tags": [
+    "asana",
+    "tasks",
+    "project-management"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.asana.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

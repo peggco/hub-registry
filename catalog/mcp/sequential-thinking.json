@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "sequential-thinking",
+  "name": "Sequential Thinking",
+  "description": "Break complex problems into reflective, revisable thought sequences.",
+  "vendor": "Model Context Protocol",
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+  "repository": "modelcontextprotocol/servers",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "2.1.1",
+  "tags": [
+    "reasoning",
+    "planning",
+    "reference"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-sequential-thinking"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "modelcontextprotocol/servers"
+  }
+}

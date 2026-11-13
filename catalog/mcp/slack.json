@@ -3,23 +3,21 @@
   "kind": "mcp",
   "id": "slack",
   "name": "Slack",
-  "description": "Read channels and send messages in a Slack workspace with a bot token.",
-  "vendor": "Model Context Protocol",
-  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
-  "repository": "modelcontextprotocol/servers",
-  "license": "MIT",
+  "description": "Read channels and messages, and post updates in a Slack workspace.",
+  "vendor": "Slack",
+  "homepage": "https://api.slack.com/mcp",
+  "license": "Proprietary",
   "isOfficial": true,
-  "version": "2025.1.0",
-  "tags": ["slack", "chat", "messaging"],
+  "tags": [
+    "slack",
+    "chat",
+    "messaging"
+  ],
   "transport": {
-    "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-slack"],
-    "env": {
-      "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
-      "SLACK_TEAM_ID": "${SLACK_TEAM_ID}"
-    }
+    "type": "http",
+    "url": "https://mcp.slack.com/mcp"
   },
-  "requiredEnv": ["SLACK_BOT_TOKEN", "SLACK_TEAM_ID"],
-  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+  "readme": {
+    "type": "none"
+  }
 }

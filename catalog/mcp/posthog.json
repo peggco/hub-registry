@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "posthog",
+  "name": "PostHog",
+  "description": "Query product analytics, manage feature flags and inspect experiments in PostHog.",
+  "vendor": "PostHog",
+  "homepage": "https://posthog.com/docs/model-context-protocol",
+  "repository": "PostHog/posthog",
+  "isOfficial": true,
+  "tags": [
+    "posthog",
+    "analytics",
+    "feature-flags"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.posthog.com/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "PostHog/posthog"
+  }
+}

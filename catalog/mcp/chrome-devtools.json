@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "chrome-devtools",
+  "name": "Chrome DevTools",
+  "description": "Inspect and control a Chrome browser for debugging, performance and network analysis.",
+  "vendor": "Google",
+  "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "repository": "ChromeDevTools/chrome-devtools-mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "1.13.0",
+  "tags": [
+    "chrome",
+    "browser",
+    "debugging"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "chrome-devtools-mcp@latest"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "ChromeDevTools/chrome-devtools-mcp"
+  }
+}

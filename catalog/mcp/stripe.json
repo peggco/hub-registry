@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "stripe",
+  "name": "Stripe",
+  "description": "Inspect customers, products, payments and invoices, and operate a Stripe account safely.",
+  "vendor": "Stripe",
+  "homepage": "https://docs.stripe.com/mcp",
+  "repository": "stripe/agent-toolkit",
+  "license": "MIT",
+  "isOfficial": true,
+  "tags": [
+    "stripe",
+    "payments",
+    "billing"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.stripe.com"
+  },
+  "readme": {
+    "type": "github",
+    "source": "stripe/agent-toolkit"
+  }
+}

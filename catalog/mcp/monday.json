@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "monday",
+  "name": "monday.com",
+  "description": "Search and update monday.com boards, items, groups and workspace data.",
+  "vendor": "monday.com",
+  "homepage": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+  "repository": "mondaycom/mcp",
+  "license": "MIT",
+  "isOfficial": true,
+  "tags": [
+    "monday",
+    "boards",
+    "project-management"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.monday.com/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "mondaycom/mcp"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "kubernetes",
+  "name": "Kubernetes",
+  "description": "Inspect and manage Kubernetes and OpenShift clusters using the current kubeconfig.",
+  "vendor": "Kubernetes MCP Server",
+  "homepage": "https://github.com/containers/kubernetes-mcp-server",
+  "repository": "containers/kubernetes-mcp-server",
+  "license": "Apache-2.0",
+  "isOfficial": false,
+  "version": "0.1.2",
+  "tags": [
+    "kubernetes",
+    "devops",
+    "containers"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "kubernetes-mcp-server@latest"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "containers/kubernetes-mcp-server"
+  }
+}

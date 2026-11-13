@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "contentful",
+  "name": "Contentful",
+  "description": "Manage Contentful entries, assets, content types and environments.",
+  "vendor": "Contentful",
+  "homepage": "https://github.com/contentful/contentful-mcp-server",
+  "repository": "contentful/contentful-mcp-server",
+  "isOfficial": true,
+  "version": "1.24.8",
+  "tags": [
+    "contentful",
+    "cms",
+    "content"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@contentful/mcp-server"
+    ],
+    "env": {
+      "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN": "${CONTENTFUL_MANAGEMENT_ACCESS_TOKEN}",
+      "SPACE_ID": "${SPACE_ID}",
+      "ENVIRONMENT_ID": "${ENVIRONMENT_ID}"
+    }
+  },
+  "requiredEnv": [
+    "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN",
+    "SPACE_ID",
+    "ENVIRONMENT_ID"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "contentful/contentful-mcp-server"
+  }
+}

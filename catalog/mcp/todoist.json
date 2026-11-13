@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "todoist",
+  "name": "Todoist",
+  "description": "Create, update and complete Todoist tasks, projects and labels.",
+  "vendor": "Doist",
+  "homepage": "https://www.todoist.com/help/todoist/todoist-and-ai/connect-todoist-to-an-ai-assistant-xMSzFfHng",
+  "isOfficial": true,
+  "tags": [
+    "todoist",
+    "tasks",
+    "productivity"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://ai.todoist.net/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

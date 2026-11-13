@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "digitalocean",
+  "name": "DigitalOcean",
+  "description": "Build, deploy and troubleshoot applications and infrastructure on DigitalOcean.",
+  "vendor": "DigitalOcean",
+  "homepage": "https://docs.digitalocean.com/reference/mcp/",
+  "isOfficial": true,
+  "tags": [
+    "digitalocean",
+    "cloud",
+    "infrastructure"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.digitalocean.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

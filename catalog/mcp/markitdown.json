@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "markitdown",
+  "name": "MarkItDown",
+  "description": "Convert PDFs, Office documents, images and audio into clean Markdown.",
+  "vendor": "Microsoft",
+  "homepage": "https://github.com/microsoft/markitdown",
+  "repository": "microsoft/markitdown",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "0.0.1a8",
+  "tags": [
+    "markdown",
+    "documents",
+    "conversion"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "markitdown-mcp"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "microsoft/markitdown"
+  }
+}

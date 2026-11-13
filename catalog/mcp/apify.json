@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "apify",
+  "name": "Apify",
+  "description": "Run Apify Actors to scrape social media, maps, search and websites.",
+  "vendor": "Apify",
+  "homepage": "https://mcp.apify.com",
+  "repository": "apify/apify-mcp-server",
+  "license": "MIT",
+  "isOfficial": true,
+  "version": "0.21.8",
+  "tags": [
+    "scraping",
+    "actors",
+    "automation"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@apify/actors-mcp-server"
+    ],
+    "env": {
+      "APIFY_TOKEN": "${APIFY_TOKEN}"
+    }
+  },
+  "requiredEnv": [
+    "APIFY_TOKEN"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "apify/apify-mcp-server"
+  }
+}

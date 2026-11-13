@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "canva",
+  "name": "Canva",
+  "description": "Create, search, edit and export Canva designs and brand assets.",
+  "vendor": "Canva",
+  "homepage": "https://www.canva.dev/docs/connect/mcp-server/",
+  "isOfficial": true,
+  "tags": [
+    "canva",
+    "design",
+    "assets"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.canva.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

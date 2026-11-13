@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "newrelic",
+  "name": "New Relic",
+  "description": "Query New Relic metrics, logs, traces, alerts and entities.",
+  "vendor": "New Relic",
+  "homepage": "https://docs.newrelic.com/docs/agentic-ai/mcp/setup/",
+  "isOfficial": true,
+  "tags": [
+    "newrelic",
+    "observability",
+    "monitoring"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.newrelic.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

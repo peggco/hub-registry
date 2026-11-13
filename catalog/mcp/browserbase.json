@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "browserbase",
+  "name": "Browserbase",
+  "description": "Drive a cloud browser with Browserbase and Stagehand to navigate and extract.",
+  "vendor": "Browserbase",
+  "homepage": "https://www.browserbase.com",
+  "repository": "browserbase/mcp-server-browserbase",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "3.0.0",
+  "tags": [
+    "browser",
+    "automation",
+    "scraping"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@browserbasehq/mcp"
+    ],
+    "env": {
+      "BROWSERBASE_API_KEY": "${BROWSERBASE_API_KEY}",
+      "BROWSERBASE_PROJECT_ID": "${BROWSERBASE_PROJECT_ID}"
+    }
+  },
+  "requiredEnv": [
+    "BROWSERBASE_API_KEY",
+    "BROWSERBASE_PROJECT_ID"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "browserbase/mcp-server-browserbase"
+  }
+}

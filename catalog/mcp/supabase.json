@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "supabase",
+  "name": "Supabase",
+  "description": "Manage Supabase projects, databases, auth and edge functions from the agent.",
+  "vendor": "Supabase",
+  "homepage": "https://supabase.com/docs/guides/getting-started/mcp",
+  "repository": "supabase/mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "tags": [
+    "supabase",
+    "database",
+    "auth"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.supabase.com/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "supabase/mcp"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "excel",
+  "name": "Excel",
+  "description": "Read, write and analyze Excel workbooks on the local filesystem.",
+  "vendor": "Excel MCP Server",
+  "homepage": "https://github.com/haris-musa/excel-mcp-server",
+  "repository": "haris-musa/excel-mcp-server",
+  "license": "MIT",
+  "isOfficial": false,
+  "version": "2.3.0",
+  "tags": [
+    "excel",
+    "spreadsheet",
+    "files"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "excel-mcp-server",
+      "stdio",
+      "--allow-dir",
+      "${EXCEL_FILES_PATH}"
+    ]
+  },
+  "requiredEnv": [
+    "EXCEL_FILES_PATH"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "haris-musa/excel-mcp-server"
+  }
+}

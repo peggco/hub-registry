@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "grafana",
+  "name": "Grafana",
+  "description": "Query Grafana dashboards, datasources, alerts and incidents.",
+  "vendor": "Grafana Labs",
+  "homepage": "https://grafana.com/docs/grafana/latest/developer-resources/mcp/",
+  "isOfficial": true,
+  "tags": [
+    "grafana",
+    "observability",
+    "dashboards"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.grafana.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

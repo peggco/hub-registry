@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "shortcut",
+  "name": "Shortcut",
+  "description": "Search and update Shortcut stories, epics, iterations and projects.",
+  "vendor": "Shortcut",
+  "isOfficial": true,
+  "tags": [
+    "shortcut",
+    "issues",
+    "project-management"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.shortcut.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

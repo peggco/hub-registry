@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "replicate",
+  "name": "Replicate",
+  "description": "Run hosted AI models on Replicate and inspect predictions.",
+  "vendor": "Replicate",
+  "homepage": "https://replicate.com/docs/reference/mcp",
+  "isOfficial": true,
+  "version": "0.9.0",
+  "tags": [
+    "ai",
+    "models",
+    "images"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "replicate-mcp"
+    ],
+    "env": {
+      "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
+    }
+  },
+  "requiredEnv": [
+    "REPLICATE_API_TOKEN"
+  ],
+  "readme": {
+    "type": "none"
+  }
+}

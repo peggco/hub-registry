@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "snyk",
+  "name": "Snyk",
+  "description": "Find and fix security issues in dependencies, code and containers.",
+  "vendor": "Snyk",
+  "homepage": "https://github.com/snyk/studio-mcp",
+  "repository": "snyk/studio-mcp",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "1.1308.4",
+  "tags": [
+    "security",
+    "dependencies",
+    "vulnerabilities"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "snyk@latest",
+      "mcp",
+      "-t",
+      "stdio"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "snyk/studio-mcp"
+  }
+}

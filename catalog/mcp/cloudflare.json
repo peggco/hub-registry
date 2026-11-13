@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "description": "Search Cloudflare developer documentation and operate Cloudflare products.",
+  "vendor": "Cloudflare",
+  "homepage": "https://developers.cloudflare.com/agents/model-context-protocol/",
+  "repository": "cloudflare/mcp-server-cloudflare",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "tags": [
+    "cloudflare",
+    "docs",
+    "edge"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://docs.mcp.cloudflare.com/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "cloudflare/mcp-server-cloudflare"
+  }
+}

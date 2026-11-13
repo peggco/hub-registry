@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "terraform",
+  "name": "Terraform",
+  "description": "Look up Terraform Registry providers, modules and documentation.",
+  "vendor": "HashiCorp",
+  "homepage": "https://github.com/hashicorp/terraform-mcp-server",
+  "repository": "hashicorp/terraform-mcp-server",
+  "license": "MPL-2.0",
+  "isOfficial": true,
+  "tags": [
+    "terraform",
+    "infrastructure",
+    "iac"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "docker",
+    "args": [
+      "run",
+      "-i",
+      "--rm",
+      "hashicorp/terraform-mcp-server"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "hashicorp/terraform-mcp-server"
+  }
+}

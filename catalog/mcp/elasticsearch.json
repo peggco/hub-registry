@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "elasticsearch",
+  "name": "Elasticsearch",
+  "description": "Search and inspect indices and documents in Elasticsearch.",
+  "vendor": "Elastic",
+  "homepage": "https://github.com/elastic/mcp-server-elasticsearch",
+  "repository": "elastic/mcp-server-elasticsearch",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.3.1",
+  "tags": [
+    "elasticsearch",
+    "search",
+    "database"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@elastic/mcp-server-elasticsearch"
+    ],
+    "env": {
+      "ES_URL": "${ES_URL}",
+      "ES_API_KEY": "${ES_API_KEY}"
+    }
+  },
+  "requiredEnv": [
+    "ES_URL",
+    "ES_API_KEY"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "elastic/mcp-server-elasticsearch"
+  }
+}

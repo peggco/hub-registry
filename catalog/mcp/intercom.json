@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "intercom",
+  "name": "Intercom",
+  "description": "Search and manage Intercom conversations, contacts and help center content.",
+  "vendor": "Intercom",
+  "homepage": "https://developers.intercom.com/docs/guides/mcp",
+  "isOfficial": true,
+  "tags": [
+    "intercom",
+    "support",
+    "chat"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.intercom.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

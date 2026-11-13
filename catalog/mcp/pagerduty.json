@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "pagerduty",
+  "name": "PagerDuty",
+  "description": "Inspect and manage PagerDuty incidents, services, schedules and on-call rotations.",
+  "vendor": "PagerDuty",
+  "homepage": "https://support.pagerduty.com/main/docs/pagerduty-mcp-server",
+  "isOfficial": true,
+  "tags": [
+    "pagerduty",
+    "incidents",
+    "on-call"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.pagerduty.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

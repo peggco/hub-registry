@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "figma",
+  "name": "Figma",
+  "description": "Bring Figma design context into the agent and write edits back to frames and components.",
+  "vendor": "Figma",
+  "homepage": "https://developers.figma.com/docs/figma-mcp-server/",
+  "repository": "figma/mcp-server-guide",
+  "isOfficial": true,
+  "tags": [
+    "figma",
+    "design",
+    "ui"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.figma.com/mcp"
+  },
+  "readme": {
+    "type": "github",
+    "source": "figma/mcp-server-guide"
+  }
+}

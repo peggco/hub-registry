@@ -4,18 +4,33 @@
   "id": "postgres",
   "name": "PostgreSQL",
   "description": "Query a PostgreSQL database with read-only tools for schema and data inspection.",
-  "vendor": "Model Context Protocol",
-  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
-  "repository": "modelcontextprotocol/servers",
+  "vendor": "Postgres MCP Pro",
+  "homepage": "https://github.com/crystaldba/postgres-mcp",
+  "repository": "crystaldba/postgres-mcp",
   "license": "MIT",
-  "isOfficial": true,
-  "version": "2025.1.0",
-  "tags": ["database", "postgres", "sql"],
+  "isOfficial": false,
+  "version": "0.3.0",
+  "tags": [
+    "database",
+    "postgres",
+    "sql"
+  ],
   "transport": {
     "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-postgres", "${DATABASE_URL}"]
+    "command": "uvx",
+    "args": [
+      "postgres-mcp",
+      "--access-mode=restricted"
+    ],
+    "env": {
+      "DATABASE_URI": "${DATABASE_URI}"
+    }
   },
-  "requiredEnv": ["DATABASE_URL"],
-  "readme": { "type": "github", "source": "modelcontextprotocol/servers" }
+  "requiredEnv": [
+    "DATABASE_URI"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "crystaldba/postgres-mcp"
+  }
 }

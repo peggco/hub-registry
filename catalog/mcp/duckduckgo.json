@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "duckduckgo",
+  "name": "DuckDuckGo Search",
+  "description": "Search the web and fetch page content privately with DuckDuckGo.",
+  "vendor": "DuckDuckGo MCP Server",
+  "homepage": "https://github.com/nickclyde/duckduckgo-mcp-server",
+  "repository": "nickclyde/duckduckgo-mcp-server",
+  "isOfficial": false,
+  "version": "0.7.0",
+  "tags": [
+    "search",
+    "web",
+    "privacy"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "duckduckgo-mcp-server"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "nickclyde/duckduckgo-mcp-server"
+  }
+}

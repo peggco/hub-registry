@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "google-cloud-monitoring",
+  "name": "Google Cloud Monitoring",
+  "description": "Inspect Google Cloud Monitoring metrics, dashboards and alerting policies.",
+  "vendor": "Google Cloud",
+  "homepage": "https://cloud.google.com/monitoring/docs/use-monitoring-mcp",
+  "isOfficial": true,
+  "tags": [
+    "google-cloud",
+    "monitoring",
+    "observability"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://monitoring.googleapis.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}

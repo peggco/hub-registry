@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "wikipedia",
+  "name": "Wikipedia",
+  "description": "Search Wikipedia and read article summaries and sections.",
+  "vendor": "Wikipedia MCP Server",
+  "homepage": "https://github.com/Rudra-ravi/wikipedia-mcp",
+  "repository": "Rudra-ravi/wikipedia-mcp",
+  "isOfficial": false,
+  "version": "2.0.1",
+  "tags": [
+    "wikipedia",
+    "reference",
+    "research"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "wikipedia-mcp"
+    ]
+  },
+  "readme": {
+    "type": "github",
+    "source": "Rudra-ravi/wikipedia-mcp"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "zapier",
+  "name": "Zapier",
+  "description": "Connect the agent to thousands of apps and actions through hosted Zapier workflows.",
+  "vendor": "Zapier",
+  "homepage": "https://zapier.com/mcp",
+  "repository": "zapier/zapier-mcp",
+  "license": "MIT",
+  "isOfficial": true,
+  "tags": [
+    "zapier",
+    "automation",
+    "integrations"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.zapier.com/api/v1/connect"
+  },
+  "readme": {
+    "type": "github",
+    "source": "zapier/zapier-mcp"
+  }
+}

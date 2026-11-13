@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "clickhouse",
+  "name": "ClickHouse",
+  "description": "Query and explore ClickHouse clusters and chDB with SQL tools.",
+  "vendor": "ClickHouse",
+  "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
+  "repository": "ClickHouse/mcp-clickhouse",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.7.0",
+  "tags": [
+    "clickhouse",
+    "database",
+    "analytics"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "mcp-clickhouse"
+    ],
+    "env": {
+      "CLICKHOUSE_HOST": "${CLICKHOUSE_HOST}",
+      "CLICKHOUSE_USER": "${CLICKHOUSE_USER}",
+      "CLICKHOUSE_PASSWORD": "${CLICKHOUSE_PASSWORD}"
+    }
+  },
+  "requiredEnv": [
+    "CLICKHOUSE_HOST",
+    "CLICKHOUSE_USER",
+    "CLICKHOUSE_PASSWORD"
+  ],
+  "readme": {
+    "type": "github",
+    "source": "ClickHouse/mcp-clickhouse"
+  }
+}

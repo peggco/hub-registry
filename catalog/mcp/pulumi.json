@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "pulumi",
+  "name": "Pulumi",
+  "description": "Search Pulumi Registry packages and manage Pulumi infrastructure.",
+  "vendor": "Pulumi",
+  "homepage": "https://www.pulumi.com/docs/iac/using-pulumi/mcp-server/",
+  "isOfficial": true,
+  "version": "0.2.0",
+  "tags": [
+    "pulumi",
+    "infrastructure",
+    "iac"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@pulumi/mcp-server@latest",
+      "stdio"
+    ]
+  },
+  "readme": {
+    "type": "none"
+  }
+}

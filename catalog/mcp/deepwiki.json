@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "mcp",
+  "id": "deepwiki",
+  "name": "DeepWiki",
+  "description": "Ask questions about any public GitHub repository using DeepWiki's generated docs.",
+  "vendor": "Cognition",
+  "homepage": "https://deepwiki.com",
+  "isOfficial": false,
+  "tags": [
+    "docs",
+    "github",
+    "search"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.deepwiki.com/mcp"
+  },
+  "readme": {
+    "type": "none"
+  }
+}
