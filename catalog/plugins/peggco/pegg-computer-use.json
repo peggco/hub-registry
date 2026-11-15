@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-computer-use",
+  "name": "Computer Use",
+  "description": "Control the real desktop with screenshots, mouse, keyboard, windows, clipboard, and a fast decision-model computer-use loop.",
+  "repository": "peggco/pegg-computer-use",
+  "homepage": "https://github.com/peggco/pegg-computer-use",
+  "tags": [
+    "desktop",
+    "automation",
+    "screenshots",
+    "computer-use"
+  ],
+  "capabilities": [
+    "tools",
+    "skills",
+    "permissions",
+    "commands"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-computer-use"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-computer-use"
+  }
+}

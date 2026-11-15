@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban-jira",
+  "name": "Kanban Jira",
+  "description": "Kanban integration for Jira: import issues and comment or transition the issue when a card succeeds.",
+  "repository": "peggco/pegg-kanban-jira",
+  "homepage": "https://github.com/peggco/pegg-kanban-jira",
+  "tags": [
+    "kanban",
+    "jira",
+    "issues",
+    "workflows"
+  ],
+  "capabilities": [
+    "hooks"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban-jira"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban-jira"
+  }
+}

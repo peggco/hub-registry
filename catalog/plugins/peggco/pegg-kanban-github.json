@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban-github",
+  "name": "Kanban GitHub",
+  "description": "Kanban integration for GitHub: import issues, prepare worktrees, and comment or open a pull request when a card succeeds.",
+  "repository": "peggco/pegg-kanban-github",
+  "homepage": "https://github.com/peggco/pegg-kanban-github",
+  "tags": [
+    "kanban",
+    "github",
+    "issues",
+    "worktrees",
+    "pull-requests"
+  ],
+  "capabilities": [
+    "hooks"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban-github"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban-github"
+  }
+}

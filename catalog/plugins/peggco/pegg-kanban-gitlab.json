@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban-gitlab",
+  "name": "Kanban GitLab",
+  "description": "Kanban integration for GitLab: import issues, prepare worktrees, and comment or open a merge request when a card succeeds.",
+  "repository": "peggco/pegg-kanban-gitlab",
+  "homepage": "https://github.com/peggco/pegg-kanban-gitlab",
+  "tags": [
+    "kanban",
+    "gitlab",
+    "issues",
+    "worktrees",
+    "merge-requests"
+  ],
+  "capabilities": [
+    "hooks"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban-gitlab"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban-gitlab"
+  }
+}

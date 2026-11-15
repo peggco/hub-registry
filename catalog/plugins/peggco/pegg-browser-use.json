@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-browser-use",
+  "name": "Browser Use",
+  "description": "Drive a real Chromium browser with stealth: snapshots with refs, forms, clicks, typing, screenshots, PDFs, downloads, and tab control.",
+  "repository": "peggco/pegg-browser-use",
+  "homepage": "https://github.com/peggco/pegg-browser-use",
+  "tags": [
+    "browser",
+    "automation",
+    "web",
+    "screenshots"
+  ],
+  "capabilities": [
+    "tools",
+    "skills",
+    "permissions",
+    "commands"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-browser-use"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-browser-use"
+  }
+}

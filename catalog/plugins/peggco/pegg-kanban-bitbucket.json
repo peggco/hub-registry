@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban-bitbucket",
+  "name": "Kanban Bitbucket",
+  "description": "Kanban integration for Bitbucket Cloud and Data Center: create worktrees and open pull requests when a card succeeds.",
+  "repository": "peggco/pegg-kanban-bitbucket",
+  "homepage": "https://github.com/peggco/pegg-kanban-bitbucket",
+  "tags": [
+    "kanban",
+    "bitbucket",
+    "worktrees",
+    "pull-requests"
+  ],
+  "capabilities": [
+    "hooks"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban-bitbucket"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban-bitbucket"
+  }
+}
