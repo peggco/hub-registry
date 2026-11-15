@@ -30,7 +30,7 @@
     "capabilities": {
       "type": "array",
       "uniqueItems": true,
-      "items": { "enum": ["tools", "skills", "permissions", "commands", "events"] }
+      "items": { "enum": ["tools", "skills", "permissions", "commands", "events", "hooks", "tui"] }
     },
     "platforms": {
       "type": "array",
