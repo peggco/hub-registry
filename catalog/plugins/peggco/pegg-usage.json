@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-usage",
+  "name": "Usage",
+  "description": "Local token and cost analytics from the Pegg session database, with breakdowns, session lists, model totals, and CSV/JSON export.",
+  "repository": "peggco/pegg-usage",
+  "homepage": "https://github.com/peggco/pegg-usage",
+  "tags": [
+    "analytics",
+    "tokens",
+    "cost",
+    "sessions"
+  ],
+  "capabilities": [
+    "tools",
+    "skills",
+    "permissions",
+    "commands",
+    "tui"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-usage"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-usage"
+  }
+}

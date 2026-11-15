@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban",
+  "name": "Kanban",
+  "description": "Drag-and-drop Kanban board with a local web UI that runs Pegg agents, queues cards, and syncs issues through integration hooks.",
+  "repository": "peggco/pegg-kanban",
+  "homepage": "https://github.com/peggco/pegg-kanban",
+  "tags": [
+    "kanban",
+    "task-board",
+    "agent-runs"
+  ],
+  "capabilities": [
+    "tools",
+    "skills",
+    "permissions",
+    "commands",
+    "tui"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban"
+  }
+}
