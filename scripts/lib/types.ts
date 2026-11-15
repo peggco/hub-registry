@@ -68,7 +68,7 @@ export interface PluginEntry {
     protocol?: number;
   };
   tags?: string[];
-  capabilities?: Array<"tools" | "skills" | "permissions" | "commands" | "events">;
+  capabilities?: Array<"tools" | "skills" | "permissions" | "commands" | "events" | "hooks" | "tui">;
   platforms?: Array<"linux" | "darwin">;
   arch?: Array<"amd64" | "arm64">;
   install: {
