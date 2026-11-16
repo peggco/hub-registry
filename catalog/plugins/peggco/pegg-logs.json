@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-logs",
+  "name": "Logs",
+  "description": "Read-only search and dashboard for the Pegg system log database, with level/text/date filters and CSV/JSON export.",
+  "repository": "peggco/pegg-logs",
+  "homepage": "https://github.com/peggco/pegg-logs",
+  "tags": [
+    "logs",
+    "diagnostics",
+    "debugging",
+    "sqlite"
+  ],
+  "capabilities": [
+    "tools",
+    "skills",
+    "permissions",
+    "commands",
+    "tui"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-logs"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-logs"
+  }
+}
