@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "isOfficial": true,
+  "version": "0.1.0",
+  "requires": {
+    "pegg": ">=0.2.4",
+    "protocol": 2
+  },
+  "platforms": [
+    "linux",
+    "darwin"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "id": "peggco/pegg-kanban-sentry",
+  "name": "Kanban Sentry",
+  "description": "Kanban integration for Sentry: import issues and route them to a git host so a pull request opens when a card succeeds.",
+  "repository": "peggco/pegg-kanban-sentry",
+  "homepage": "https://github.com/peggco/pegg-kanban-sentry",
+  "tags": [
+    "kanban",
+    "sentry",
+    "issues",
+    "errors"
+  ],
+  "capabilities": [
+    "hooks"
+  ],
+  "install": {
+    "type": "github-release",
+    "source": "peggco/pegg-kanban-sentry"
+  },
+  "readme": {
+    "type": "github",
+    "source": "peggco/pegg-kanban-sentry"
+  }
+}
